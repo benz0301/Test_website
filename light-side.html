@@ -13,6 +13,23 @@
             padding: 0;
         }
         
+        /* Navigation bar styling */
+        nav {
+            background-color: #2c3e50; /* Dark background */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #f39c12; /* Gold text for links */
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffffff; /* Hover effect */
+        }
+        
         h1, h2 {
             text-align: center;
             margin: 20px 0;
@@ -67,25 +84,109 @@
             width: 80%;
             margin: 20px auto;
         }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #f39c12; /* Golden border for table */
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f39c12; /* Gold background for header */
+            color: #ffffff;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for table cells */
+        }
+
+        /* Button styling */
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f39c12;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #d35400; /* Darker orange on hover */
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#jedi-wisdom">Jedi Wisdom</a>
+        <a href="#jedi-info">Jedi Information</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
         <h1>Welcome to the Light Side</h1>
         <hr>
         <p>The Jedi are guardians of peace, hope, and justice in the galaxy. They stand as protectors of the innocent, relying on the Light Side of the Force.</p>
 
-        <h2>Wisdom from the Jedi</h2>
+        <!-- Jedi Quotes Section -->
+        <h2 id="jedi-wisdom">Wisdom from the Jedi</h2>
         <ul>
             <li>"Always pass on what you have learned." <span class="quote">- Yoda</span></li>
             <li>"Do or do not, there is no try." <span class="quote">- Yoda</span></li>
             <li>"The Force will be with you. Always." <span class="quote">- Obi-Wan Kenobi</span></li>
             <li>"Confronting fear is the destiny of a Jedi." <span class="quote">- Luke Skywalker</span></li>
         </ul>
+
+        <!-- Jedi Information Table -->
+        <h2 id="jedi-info">Jedi Ranks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Description</th>
+                    <th>Famous Jedi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Padawan</td>
+                    <td>A Jedi apprentice under the tutelage of a Jedi Knight or Master.</td>
+                    <td>Anakin Skywalker, Ahsoka Tano</td>
+                </tr>
+                <tr>
+                    <td>Jedi Knight</td>
+                    <td>A full-fledged Jedi who has completed their training and trials.</td>
+                    <td>Obi-Wan Kenobi, Qui-Gon Jinn</td>
+                </tr>
+                <tr>
+                    <td>Jedi Master</td>
+                    <td>A wise and experienced Jedi Knight, often taking on apprentices.</td>
+                    <td>Yoda, Mace Windu</td>
+                </tr>
+                <tr>
+                    <td>Jedi Grand Master</td>
+                    <td>The highest rank, representing the leader of the Jedi Order.</td>
+                    <td>Yoda, Luke Skywalker</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Image and Audio -->
         <audio autoplay loop>
             <source src="star_wars_jedi_theme_mp3_64502.mp3" type="audio/mpeg">
         </audio>
-        <img src="yoda afbeelding.jpeg" alt="Yoda" width="300">
+        <img src="yoda_afbeelding.jpeg" alt="Yoda" width="300">
+
+        <!-- Button Section -->
+        <a href="#contact" class="button">Contact Us</a>
     </div>
 </body>
 </html>
